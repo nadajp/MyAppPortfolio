@@ -40,7 +40,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void startSpotify(View view) {
-        Toast.makeText(this, "This button will launch my Spotify Streamer app!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "This button will launch my Popular Movies app!", Toast.LENGTH_SHORT).show();
     }
 
     public void startScores(View view) {

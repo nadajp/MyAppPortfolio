@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25sp"
-        android:text="My Nanodegree Apps!"
+        android:text="@string/title"
         android:id="@+id/textTitle"
         android:layout_centerHorizontal="true"
         android:textColor="#000000"/>
@@ -18,8 +18,8 @@
     <Button
         android:layout_width="250dp"
         android:layout_height="60dp"
-        android:text="SPOTIFY STREAMER"
-        android:id="@+id/buttonSpotify"
+        android:text="@string/popular_movies"
+        android:id="@+id/buttonPopularMovies"
         android:layout_below="@+id/textTitle"
         android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
@@ -30,9 +30,9 @@
     <Button
         android:layout_width="250dp"
         android:layout_height="60dp"
-        android:text="SCORES APP"
+        android:text="@string/scores_app"
         android:id="@+id/buttonScores"
-        android:layout_below="@+id/buttonSpotify"
+        android:layout_below="@+id/buttonPopularMovies"
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
         android:background="@color/orange"
@@ -42,7 +42,7 @@
     <Button
         android:layout_width="250dp"
         android:layout_height="60dp"
-        android:text="LIBRARY APP"
+        android:text="@string/library_app"
         android:id="@+id/buttonLibrary"
         android:layout_below="@+id/buttonScores"
         android:layout_marginTop="10dp"
@@ -54,7 +54,7 @@
     <Button
         android:layout_width="250dp"
         android:layout_height="60dp"
-        android:text="BUILD IT BIGGER"
+        android:text="@string/build_it_bigger"
         android:id="@+id/buttonBuildItBigger"
         android:layout_below="@+id/buttonLibrary"
         android:layout_marginTop="10dp"
@@ -66,7 +66,7 @@
     <Button
         android:layout_width="250dp"
         android:layout_height="60dp"
-        android:text="XYZ READER"
+        android:text="@string/xyz_reader"
         android:id="@+id/buttonXYZReader"
         android:layout_below="@+id/buttonBuildItBigger"
         android:layout_marginTop="10dp"
@@ -78,7 +78,7 @@
     <Button
         android:layout_width="250dp"
         android:layout_height="60dp"
-        android:text="CAPSTONE: MY OWN APP"
+        android:text="@string/capstone"
         android:id="@+id/buttonCapstone"
         android:layout_below="@+id/buttonXYZReader"
         android:layout_marginTop="10dp"
