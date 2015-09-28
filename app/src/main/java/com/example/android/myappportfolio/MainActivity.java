@@ -1,5 +1,6 @@
 package com.example.android.myappportfolio;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -39,8 +40,14 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void startSpotify(View view) {
-        Toast.makeText(this, "This button will launch my Popular Movies app!", Toast.LENGTH_SHORT).show();
+    public void startPopularMovies(View view) {
+        //Toast.makeText(this, "This button will launch my Popular Movies app!", Toast.LENGTH_SHORT).show();
+        Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.nadajp.popularmovies");
+        if (launchIntent.resolveActivity(getPackageManager()) != null) {
+            startActivity(launchIntent);
+        } else {
+            Toast.makeText(this, "Popular Movies app is not installed on this device.", Toast.LENGTH_LONG).show();
+        }
     }
 
     public void startScores(View view) {
